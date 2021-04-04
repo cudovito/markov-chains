@@ -56,6 +56,16 @@ const Support = () => {
               Saurabh Waradkar
             </Typography>
             <Typography variant="body2" component="p">
+              Twitter-{" "}
+              <a
+                href="https://twitter.com/saurabhwaradkar"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {"@saurabhwaradkar"}
+              </a>
+            </Typography>
+            <Typography variant="body2" component="p">
               Gmail: waradkarsaurabh@gmail.com
             </Typography>
           </CardContent>
@@ -72,8 +82,12 @@ const Support = () => {
             </Typography>
             <Typography variant="body2" component="p">
               Twitter-{" "}
-              <a href="https://twitter.com/rishabhb932" target="_blank">
-                {"https://twitter.com/rishabhb932"}
+              <a
+                href="https://twitter.com/rishabhb932"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {"@rishabhb932"}
               </a>
             </Typography>
             <Typography variant="body2" component="p">
