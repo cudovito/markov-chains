@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/markov-chains/static/css/main.2ae47eeb.chunk.css",
+    "main.js": "/markov-chains/static/js/main.51cf8edd.chunk.js",
+    "main.js.map": "/markov-chains/static/js/main.51cf8edd.chunk.js.map",
+    "runtime-main.js": "/markov-chains/static/js/runtime-main.c0f7b754.js",
+    "runtime-main.js.map": "/markov-chains/static/js/runtime-main.c0f7b754.js.map",
+    "static/js/2.84cf1613.chunk.js": "/markov-chains/static/js/2.84cf1613.chunk.js",
+    "static/js/2.84cf1613.chunk.js.map": "/markov-chains/static/js/2.84cf1613.chunk.js.map",
+    "static/js/3.56cc8cf6.chunk.js": "/markov-chains/static/js/3.56cc8cf6.chunk.js",
+    "static/js/3.56cc8cf6.chunk.js.map": "/markov-chains/static/js/3.56cc8cf6.chunk.js.map",
+    "index.html": "/markov-chains/index.html",
+    "static/css/main.2ae47eeb.chunk.css.map": "/markov-chains/static/css/main.2ae47eeb.chunk.css.map",
+    "static/js/2.84cf1613.chunk.js.LICENSE.txt": "/markov-chains/static/js/2.84cf1613.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c0f7b754.js",
+    "static/js/2.84cf1613.chunk.js",
+    "static/css/main.2ae47eeb.chunk.css",
+    "static/js/main.51cf8edd.chunk.js"
+  ]
+}
