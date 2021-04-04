@@ -41,7 +41,7 @@ const APIDocs = () => {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Container component="main" maxWidth="md">
+    <Container component="main">
       <div className={classes.paper}>
         <Typography component="h1" variant="h5" className={classes.APIDocs}>
           API Docs
