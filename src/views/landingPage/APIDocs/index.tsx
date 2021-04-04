@@ -12,7 +12,8 @@ import { sampleResponse } from "../../../utils/APIDocs/constants";
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    minWidth: 375,
+    // minWidth: 375,
+    width: "100%",
   },
   bullet: {
     display: "inline-block",
@@ -27,6 +28,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   paper: {
     marginTop: theme.spacing(8),
+    marginLeft: theme.spacing(4),
+    marginRight: theme.spacing(4),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -41,35 +44,35 @@ const APIDocs = () => {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Container component="main">
-      <div className={classes.paper}>
-        <Typography component="h1" variant="h5" className={classes.APIDocs}>
-          API Docs
-        </Typography>
-        <Card className={classes.root} variant="outlined">
-          <CardContent>
-            <Typography
-              className={classes.title}
-              color="textSecondary"
-              gutterBottom
-            >
-              Type - POST
-            </Typography>
-            <Typography variant="h5" component="h2">
-              Endpoint- {"https://www.cudovito.com/auth/register/:email"}
-            </Typography>
-            <Typography variant="body2" component="p">
-              Response:
-              <br />
-              {sampleResponse}
-            </Typography>
-          </CardContent>
-          {/* <CardActions>
+    // <Container component="main">
+    <div className={classes.paper}>
+      <Typography component="h1" variant="h5" className={classes.APIDocs}>
+        API Docs
+      </Typography>
+      <Card className={classes.root} variant="outlined">
+        <CardContent>
+          <Typography
+            className={classes.title}
+            color="textSecondary"
+            gutterBottom
+          >
+            Type - POST
+          </Typography>
+          <Typography variant="h5" component="h2">
+            Endpoint- {"https://www.cudovito.com/auth/register/:email"}
+          </Typography>
+          <Typography variant="body2" component="p">
+            Response:
+            <br />
+            {sampleResponse}
+          </Typography>
+        </CardContent>
+        {/* <CardActions>
             <Button size="small">Learn More</Button>
           </CardActions> */}
-        </Card>
-      </div>
-    </Container>
+      </Card>
+    </div>
+    // </Container>
   );
 };
 
