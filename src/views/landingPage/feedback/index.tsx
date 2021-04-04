@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
@@ -46,14 +46,18 @@ const useStyles = makeStyles((theme) => ({
 const Feedback = () => {
   const classes = useStyles();
 
-  const [state, setState] = React.useState({
-    checkedA: false,
-    checkedB: false,
-    checkedC: false,
-  });
+  const [checkedA, setCheckedA] = useState(false);
+  const [checkedB, setCheckedB] = useState(false);
+  const [checkedC, setCheckedC] = useState(false);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
+  const handleChangeA = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckedA(event.target.checked);
+  };
+  const handleChangeB = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckedB(event.target.checked);
+  };
+  const handleChangeC = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckedC(event.target.checked);
   };
 
   return (
@@ -69,8 +73,8 @@ const Feedback = () => {
               <FormControlLabel
                 control={
                   <Checkbox
-                    checked={state.checkedA}
-                    onChange={handleChange}
+                    checked={checkedA}
+                    onChange={handleChangeA}
                     name="checkedB"
                     color="primary"
                   />
@@ -80,8 +84,8 @@ const Feedback = () => {
               <FormControlLabel
                 control={
                   <Checkbox
-                    checked={state.checkedB}
-                    onChange={handleChange}
+                    checked={checkedB}
+                    onChange={handleChangeB}
                     name="checkedB"
                     color="primary"
                   />
@@ -91,8 +95,8 @@ const Feedback = () => {
               <FormControlLabel
                 control={
                   <Checkbox
-                    checked={state.checkedC}
-                    onChange={handleChange}
+                    checked={checkedC}
+                    onChange={handleChangeC}
                     name="checkedB"
                     color="primary"
                   />
@@ -100,7 +104,7 @@ const Feedback = () => {
                 label="others"
               />
             </FormGroup>
-            {state.checkedC ? (
+            {checkedC ? (
               <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <TextField

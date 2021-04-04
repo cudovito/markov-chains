@@ -71,7 +71,10 @@ const Support = () => {
               Rishabh Bhardwaj
             </Typography>
             <Typography variant="body2" component="p">
-              Twitter- {"https://twitter.com/rishabhb932"}
+              Twitter-{" "}
+              <a href="https://twitter.com/rishabhb932" target="_blank">
+                {"https://twitter.com/rishabhb932"}
+              </a>
             </Typography>
             <Typography variant="body2" component="p">
               Gmail: rishabhb932@gmail.com
