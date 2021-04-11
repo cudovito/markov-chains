@@ -54,8 +54,8 @@ const OrganisationRegister = () => {
                   fullWidth
                   id="name"
                   label="Name"
-                  autoFocus
                   placeholder="name"
+                  autoFocus
                 />
               </Grid>
               <Grid item xs={12}>

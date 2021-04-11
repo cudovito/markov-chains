@@ -49,7 +49,6 @@ const APIKeys = () => {
                   fullWidth
                   id="email"
                   label="Email"
-                  autoFocus
                 />
               </Grid>
             </Grid>

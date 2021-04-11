@@ -47,6 +47,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     // backgroundColor: theme.palette.background.paper,
     marginTop: theme.spacing(2),
   },
+  optionTab: {
+    width: "25%",
+  },
 }));
 
 const Register = () => {
@@ -59,7 +62,7 @@ const Register = () => {
 
   return (
     <div className={classes.root}>
-      <Container component="main" maxWidth="xs">
+      <Container component="main" className={classes.optionTab}>
         <AppBar position="static" color="default">
           <Tabs
             value={value}

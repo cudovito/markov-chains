@@ -9,7 +9,7 @@ import { sampleResponse } from "../../../utils/APIDocs/constants";
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     // minWidth: 375,
-    width: "100%",
+    width: "50%",
   },
   bullet: {
     display: "inline-block",
